@@ -1,0 +1,12 @@
+package com.sistema.gestao.operacional;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SistemaGestaoOperacionalApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SistemaGestaoOperacionalApplication.class, args);
+    }
+}
