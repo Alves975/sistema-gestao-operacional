@@ -1,0 +1,9 @@
+package com.sistema.gestao.operacional.dto.relatorio;
+
+public class RelatorioGeralDTO {
+
+    public RelatorioDemandasDTO demandas;
+    public RelatorioClientesDTO clientes;
+    public RelatorioUsuariosDTO usuarios;
+    public RelatorioLogsDTO logs;
+}
