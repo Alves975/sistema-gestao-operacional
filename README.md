@@ -1,18 +1,19 @@
 📘 Sistema de Gestão Operacional – Dashboard Inteligente
-Desenvolvido por Eduardo Alves Martins
+
+Desenvolvido por: Eduardo Alves Martins
 
 🚀 Descrição do Projeto
 
 O Sistema de Gestão Operacional é uma plataforma completa desenvolvida para simular processos empresariais reais, integrando:
 
-✔ Backend em Java + Spring Boot
-✔ Banco de dados MySQL
-✔ Automação com Python
-✔ Utilitário técnico em C
-✔ Dashboard em HTML/CSS
-✔ Versionamento com Git e GitHub
+✔ Java + Spring Boot (API REST)
+✔ MySQL (banco relacional)
+✔ Python (automação e relatórios)
+✔ C (utilitário técnico)
+✔ HTML/CSS (dashboard)
+✔ Git/GitHub (versionamento)
 
-Este projeto demonstra domínio em múltiplas tecnologias, arquitetura profissional e integração entre camadas de software.
+Este projeto demonstra domínio prático em arquitetura, backend, automação, banco de dados e boas práticas de desenvolvimento.
 
 🛠 Tecnologias Utilizadas
 🔧 Desenvolvimento
@@ -39,29 +40,30 @@ Maven
 
 Python 3 + pip
 
-Scripts de análise, relatórios e integração futura com IA
+Scripts de análise, relatórios e futura inteligência artificial
 
 🐬 Banco de Dados
 
 MySQL / MariaDB
 
-Scripts SQL versionados (sql-database/init.sql)
+Scripts SQL versionados
+→ sql-database/init.sql
 
 ⚙ Utilitário em C
 
 GCC
 
-Programa de validação e logs
+Programa de validação de arquivos e logs
 
-🌐 Dashboard Web
+🌐 Dashboard
 
-HTML / CSS
+HTML + CSS
 
 ☁ Nuvem (Futuro)
 
 AWS CLI
 
-EC2 / RDS / S3 (deploy e automações)
+Deploy via EC2, RDS e S3
 
 📂 Estrutura do Repositório
 sistema-gestao-operacional/
@@ -70,11 +72,10 @@ sistema-gestao-operacional/
 ├── python-automation/      → Scripts de automação e relatórios
 ├── sql-database/           → Scripts SQL (init.sql, data.sql)
 ├── c-utility/              → Utilitário técnico em C
-├── dashboard-html-css/     → Interface simples HTML/CSS
+├── dashboard-html-css/     → Interface HTML/CSS
 └── docs/                   → Documentação adicional
 
 🏗 API REST – Java + Spring Boot
-🔥 Endpoints Principais
 📌 Clientes
 Método	Rota	Descrição
 POST	/clientes	Cadastrar cliente
@@ -92,7 +93,7 @@ DELETE	/demandas/{id}	Deletar demanda
 PATCH	/demandas/{id}/status	Atualizar status
 🗄 Banco de Dados – MySQL
 
-O banco é composto por quatro tabelas principais:
+O banco contém 4 tabelas principais:
 
 usuarios
 
@@ -102,11 +103,7 @@ demandas
 
 logs
 
-O script completo está em:
-
-sql-database/init.sql
-
-▶ Como instalar o banco:
+▶ Instalação:
 sudo mysql -u root -p
 CREATE DATABASE sistema_gestao_operacional;
 exit;
@@ -115,65 +112,61 @@ mysql -u root -p sistema_gestao_operacional < sql-database/init.sql
 
 🐍 Automação – Python
 
-Scripts planejados:
+Scripts planejados executam:
 
 Conexão com MySQL
 
-Análise de demandas pendentes
-
-Classificação de prioridade
+Análise de demandas
 
 Geração de relatórios (CSV/HTML)
 
-Futuro: integração com IA e AWS S3
+Classificação de prioridade
 
-Exemplos:
-
-calcular_prioridade(demanda)
-gerar_relatorio_diario()
-conectar_mysql()
+Futuro: integração com IA + AWS S3
 
 ⚙ Utilitário em C
 
-Programa simples com:
+Utilitário para:
 
-Leitura de arquivos
+Validar arquivos
 
-Validação de relatórios
+Analisar estrutura
 
-Logs
+Registrar logs
 
-Uso de ponteiros
+Testar relatórios
 
-Compilação via GCC
+Compilar com:
+
+gcc utilitario.c -o utilitario
 
 🌐 Dashboard – HTML + CSS
 
-Interface simples e funcional exibindo:
+Exibe:
 
-resumo do sistema
+Resumo das demandas
 
-estatísticas
+Estatísticas
 
-links para relatórios
+Relatórios
 
-informações do desenvolvedor
+Informações gerais do sistema
 
 🔧 Instalação do Projeto
 ▶ 1. Clone o repositório:
 git clone https://github.com/Alves975/sistema-gestao-operacional.git
 
-▶ 2. Entre no diretório:
+▶ 2. Entrar no diretório:
 cd sistema-gestao-operacional
 
-▶ 3. Backend – Java
+▶ 3. Executar o backend:
 cd java-backend
 mvn spring-boot:run
 
-▶ 4. Banco de Dados
+▶ 4. Instalar o banco:
 mysql -u root -p sistema_gestao_operacional < sql-database/init.sql
 
-▶ 5. Automação
+▶ 5. Executar automação Python:
 cd python-automation
 python3 script.py
 
@@ -197,6 +190,6 @@ Demonstrar domínio prático em:
 ✔ MySQL / SQL
 ✔ C / Ferramentas técnicas
 ✔ Git / GitHub
-✔ HTML / CSS / Front-end
+✔ HTML / CSS
 ✔ Arquitetura de sistemas
-✔ Deploy e boas práticas
+✔ Boas práticas e deploy
