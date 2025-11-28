@@ -45,3 +45,12 @@ CREATE TABLE logs (
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
     FOREIGN KEY (demanda_id) REFERENCES demandas(id)
 );
+
+CREATE TABLE configuracoes_sistema (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    chave VARCHAR(255) UNIQUE,
+    valor VARCHAR(255)
+);
+
+INSERT INTO configuracoes_sistema (chave, valor)
+VALUES ('protecao_delete', 'ativado');
