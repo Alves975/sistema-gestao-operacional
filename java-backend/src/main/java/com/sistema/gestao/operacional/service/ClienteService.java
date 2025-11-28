@@ -67,4 +67,6 @@ public class ClienteService {
 
         logService.registrar("Deletou cliente: " + cliente.getNome(), usuario);
     }
+
+    
 }

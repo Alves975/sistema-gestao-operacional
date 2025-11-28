@@ -37,4 +37,5 @@ public class Cliente {
         this.telefone = telefone;
         this.status = status;
     }
+    
 }
