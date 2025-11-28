@@ -1,8 +1,0 @@
-package com.sistema.gestao.operacional.dto.relatorio;
-
-public class RelatorioUsuariosDTO {
-
-    public long totalUsuarios;
-    public long admins;
-    public long operadores;
-}

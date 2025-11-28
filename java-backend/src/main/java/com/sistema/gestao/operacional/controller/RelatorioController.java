@@ -5,37 +5,25 @@ import com.sistema.gestao.operacional.service.RelatorioService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/relatorios")
+@RequestMapping("/api/relatorios")
 public class RelatorioController {
 
-    private final RelatorioService relatorioService;
+    private final RelatorioService service;
 
-    public RelatorioController(RelatorioService relatorioService) {
-        this.relatorioService = relatorioService;
-    }
+    public RelatorioController(RelatorioService service){ this.service = service; }
 
     @GetMapping("/demandas")
-    public RelatorioDemandasDTO demandas() {
-        return relatorioService.gerarRelatorioDemandas();
-    }
+    public RelatorioDemandasDTO demandas(){ return service.gerarRelatorioDemandas(); }
 
     @GetMapping("/clientes")
-    public RelatorioClientesDTO clientes() {
-        return relatorioService.gerarRelatorioClientes();
-    }
+    public RelatorioClientesDTO clientes(){ return service.gerarRelatorioClientes(); }
 
     @GetMapping("/usuarios")
-    public RelatorioUsuariosDTO usuarios() {
-        return relatorioService.gerarRelatorioUsuarios();
-    }
+    public RelatorioUsuariosDTO usuarios(){ return service.gerarRelatorioUsuarios(); }
 
     @GetMapping("/logs")
-    public RelatorioLogsDTO logs() {
-        return relatorioService.gerarRelatorioLogs();
-    }
+    public RelatorioLogsDTO logs(){ return service.gerarRelatorioLogs(); }
 
     @GetMapping("/geral")
-    public RelatorioGeralDTO geral() {
-        return relatorioService.gerarRelatorioGeral();
-    }
+    public RelatorioGeralDTO geral(){ return service.gerarRelatorioGeral(); }
 }

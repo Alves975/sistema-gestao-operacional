@@ -1,8 +1,0 @@
-package com.sistema.gestao.operacional.dto.relatorio;
-
-public class RelatorioLogsDTO {
-
-    public long totalLogs;
-    public long logsHoje;
-    public long logsSemana;
-}

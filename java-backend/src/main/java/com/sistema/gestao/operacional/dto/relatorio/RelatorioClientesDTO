@@ -1,8 +1,0 @@
-package com.sistema.gestao.operacional.dto.relatorio;
-
-public class RelatorioClientesDTO {
-
-    public long totalClientes;
-    public long clientesAtivos;
-    public long clientesInativos;
-}
